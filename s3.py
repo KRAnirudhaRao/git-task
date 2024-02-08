@@ -13,4 +13,4 @@ def lambda_handler(event, context):
         location = {'LocationConstraint' :region}
         s3_client.create_bucket(Bucket=bucket_name,
                                     CreateBucketConfiguration=location)
-    return {}
+    return { }
